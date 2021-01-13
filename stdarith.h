@@ -7,10 +7,10 @@
 
 /*###################################################################################
 #
-#		converts a char which is either 0-9 or a-b to it's eqivalent hex** value 
+#	converts a char which is either 0-9 or a-b to it's eqivalent hex** value 
 #
-#		**here the input char ch must be a char between 0-9 or a-b otherwise the 
-#		  computed value will no be as expected (it will take 0 for such char).
+#	**here the input char ch must be a char between 0-9 or a-b otherwise the 
+#	  computed value will no be as expected (it will take 0 for such char).
 # 
 ###################################################################################*/
 #define process(ch) (uint64_t)(((uint64_t)(ch)-((uint64_t)(-('0'<=(ch)&&'9'>=(ch)))&(uint64_t)'0')-((uint64_t)(-('a'<=(ch)&&'f'>=(ch)))&(uint64_t)('a'-10)))&(uint64_t)(-(('0'<=(ch)&&'9'>=(ch))||('a'<=(ch)&&'f'>=(ch)))))
