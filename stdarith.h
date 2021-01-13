@@ -23,7 +23,7 @@ struct  __bigint
 
 typedef struct __bigint large[1];
 
-void 
+void
 loadnum(large des, large sor);
 void
 paddloadnum(large des, large sor, uint64_t padd);
